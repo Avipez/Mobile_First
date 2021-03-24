@@ -144,21 +144,35 @@ main .background-img {
 }
 
 .main-grid-conteiner {
-    
+    width: 100%;
+    min-width: 235px;
+    height: 400px;
+    background-color: var(--off-white);
 }
 
-.main-grid-conteiner div {
+.main-grid-conteiner .currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+.grid-conteiner{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-items: center;
+    width: 70%;
+    min-width: 220px;
+    max-width: 300px;
     height: 300px;
-    background-color: #757575;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
 }
 
 .main-grid-conteiner .grid {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2px;
@@ -168,11 +182,171 @@ main .background-img {
 
 
 .grid p {
-    width: 110px;
-    height: 55px;
-    background-color: white;
+    width: 100%;
+    height: 100%;
+    background-color: var(--just-white);
     margin: 0;
     text-align: center;
-    line-height: 55px;
-    /* padding: 10px; */
+    line-height: 70px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.grid p .arriba {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    background-image: url(./assets/icons/trending-up.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid p .abajo {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    background-image: url(./assets/icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.grid .right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #757575;
+}
+
+.top-left-box{
+    border-top-left-radius: 15px;
+}
+
+.top-right-box {
+    border-top-right-radius: 15px;
+}
+
+.bottom-left-box {
+    border-bottom-left-radius: 15px;
+}
+
+.bottom-right-box {
+    border-bottom-right-radius: 15px;
+}
+
+.main-exchange--date{
+    width: 190px;
+    height: 30px;
+    margin: 15px auto 0;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+}
+
+.main-exchange--date p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.main-product--detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--black);
+
+}
+
+.main-product--detail .batata-logo {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 25px);
+    width: 40px;
+    height: 25px;
+    background-image: url(./assets/icons/batata.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 50px auto 0;
+    text-align: center;
+
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--warm-black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .16);
+}
+
+.product-detail--card .i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clock{
+    background-image: url(./assets/icons/clock.svg);
+}
+
+.eye {
+    background-image: url(./assets/icons/eye.svg);
+}
+
+.money {
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+
+.check {
+    background-image: url(./assets/icons/check-circle.svg);
+}
+
+.product-card--title {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--just-white)
+}
+
+.product-card--body {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
 }
