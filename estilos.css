@@ -145,10 +145,29 @@ main .background-img {
 
 .main-grid-conteiner {
     width: 100%;
-    min-width: 235px;
+    display: flex;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 100px;
     height: 400px;
     background-color: var(--off-white);
 }
+
+.grid-conteiner{
+    height: 350px;
+    max-width: 400px;
+    font-family: "Inter", sans-serif;
+}
+
+.monedas {
+    padding-left: 70px;
+}
+
+.comisiones {
+    padding-right: 70px;
+}
+
 
 .main-grid-conteiner .currency-table--title {
     margin-bottom: 15px;
@@ -158,20 +177,19 @@ main .background-img {
     color: var(--bitcoin-orange);
 }
 
-.grid-conteiner{
-    display: flex;
-    justify-items: center;
-    width: 70%;
-    min-width: 220px;
-    max-width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    font-family: "Inter", sans-serif;
+.comisiones .currency-table--title {
+    color: var(--secondary-blue);
 }
+
+.comisiones .main-exchange--date {
+    background-color: var(--soft-blue);
+}
+
+
 
 .main-grid-conteiner .grid {
     width: 100%;
-    height: 100%;
+    height: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,7 +205,7 @@ main .background-img {
     background-color: var(--just-white);
     margin: 0;
     text-align: center;
-    line-height: 70px;
+    line-height: 60px;
     font-weight: 500;
     color: var(--grey);
 }
@@ -238,8 +256,8 @@ main .background-img {
 
 .main-exchange--date{
     width: 190px;
-    height: 30px;
-    margin: 15px auto 0;
+    height: 40px;
+    margin: 15px auto 15px;
     border-radius: 8px;
     padding: 8px;
     background-color: var(--soft-orange);
@@ -403,8 +421,9 @@ main .background-img {
 
 .plans-conteiner--slider {
     display: flex;
-    /* gap: 20px; */
-    /* height: 316px; */
+    padding: 0 30px;
+    gap: 20px;
+    height: 316px;
     overflow: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -414,11 +433,10 @@ main .background-img {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 0 50px;
-    margin-left: 50px;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -463,6 +481,10 @@ main .background-img {
     vertical-align: 30px;
 }
 
+.plan-conteiner--card .plan-body .texto-largo {
+    font-size: 1rem;
+}
+
 .plan-body .plan-card--saving {
     font-size: 1.2rem;
     color: #757575;
@@ -473,6 +495,7 @@ main .background-img {
     text-align: center;
 
 }
+
 
 .plan-body button {
     width: 150px;
@@ -494,5 +517,41 @@ main .background-img {
     height: 20px;
     background-image: url("./assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li{
+    margin: 10px 0;
+}
+
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+@media (min-width: 426px) {
+    .main-grid-conteiner{
+        justify-content: center;
+    }
 }
 

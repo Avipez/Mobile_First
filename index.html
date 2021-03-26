@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="/css/tablet.css" media="(min-width: 930px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
 </head>
@@ -26,8 +27,8 @@
                  <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
              </div>
              <section class="main-grid-conteiner">
-                 <p class="currency-table--title">Monedas</p>
-                 <div class="grid-conteiner">
+                 <div class="grid-conteiner monedas">
+                    <p class="currency-table--title">Monedas</p>
                      <div class="grid">
                         <p class="bitcoin top-left-box">Bitcoin</p>
                         <p class="b$ right top-right-box">$1.96 <i class="abajo"></i> </p>
@@ -37,11 +38,27 @@
                         <p class="r$ right">$2.15 <i class="abajo"></i></p>
                         <p class="stellar bottom-left-box">Stellar</p>
                         <p class="s$ right bottom-right-box">$4.96 <i class="abajo"></i></p>
-                        </div>
+                    </div>
+                    <div class="main-exchange--date">
+                       <p> <b>Actualizado:</b> 23 de Marzo 2021 </p>
+                   </div>
                  </div>
-                 <div class="main-exchange--date">
-                     <p> <b>Actualizado:</b> 23 de Marzo 2021 </p>
-                 </div>
+                 <div class="grid-conteiner comisiones">
+                     <p class="currency-table--title">Comisiones</p>
+                    <div class="grid">
+                       <p class="bitcoin top-left-box">Bitrade</p>
+                       <p class="b$ right top-right-box">$12.96</p>
+                       <p class="ethereum">Bitpreco</p>
+                       <p class="e$ right">$13.07</p>
+                       <p class="ripple">Novadax</p>
+                       <p class="r$ right">$13.15</p>
+                       <p class="stellar bottom-left-box">Coinext</p>
+                       <p class="s$ right bottom-right-box">$14.96</p>
+                       </div>
+                       <div class="main-exchange--date">
+                           <p> <b>Actualizado:</b> 23 de Marzo 2021 </p>
+                       </div>
+                </div>
              </section>
         </section>
         <section class="main-product--detail">
@@ -83,11 +100,10 @@
             </div>
             <section class="plans-conteiner--slider">
                 <article class="plan-conteiner--card">
-                    <p class="recomended">Recomendado</p>
                     <div class="plan-body">
-                        <h3>Pago anual</h3>
-                        <p class="plan-card--price"><span>$</span>99</p>
-                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual</p>
+                        <h3>Pago mensual</h3>
+                        <p class="plan-card--price"><span>$</span>19</p>
+                        <p class="plan-card--saving">*plan basico ideal para iniciar.</p>
                         <button>Escoger este <span></span></button>
                     </div>
                 </article>
@@ -96,21 +112,32 @@
                     <div class="plan-body">
                         <h3>Pago anual</h3>
                         <p class="plan-card--price"><span>$</span>99</p>
-                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual</p>
+                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
                         <button>Escoger este <span></span></button>
                     </div>
                 </article>
                 <article class="plan-conteiner--card">
-                    <p class="recomended">Recomendado</p>
                     <div class="plan-body">
-                        <h3>Pago anual</h3>
-                        <p class="plan-card--price"><span>$</span>99</p>
-                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual</p>
+                        <h3>De por vida</h3>
+                        <p class="plan-card--price"><span>$</span>199</p>
+                        <p class="plan-card--saving texto-largo">*Excusiva para los primeros 100 clientes com un precio especial.</p>
                         <button>Escoger este <span></span></button>
                     </div>
                 </article>
             </section>
         </section>
     </main>
+    <footer>
+        <section class="left">
+            <ul>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <img src="./assets/img/logo-footer.svg" alt="Logo de batatabit 2020">
+        </section>
+    </footer>
 </body>
 </html>
