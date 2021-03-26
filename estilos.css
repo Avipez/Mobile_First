@@ -555,3 +555,21 @@ footer .left ul {
     }
 }
 
+@media (min-width: 930px) {
+    .main-grid-conteiner {
+        justify-content: center;
+        overflow: unset;
+    }
+    
+    .products-cards--conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 930px;
+        margin: 0 auto;
+    }
+    
+    .plans-conteiner--slider {
+        overflow: unset;
+        justify-content: center;
+    }
+}
